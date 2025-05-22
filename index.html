@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سيرفراتي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>لوحة إدارة السيرفرات</h1>
+    <form id="serverForm">
+        <input type="text" id="name" placeholder="اسم السيرفر" required>
+        <input type="number" id="ram" placeholder="الرام (جيجابايت)" required>
+        <input type="number" id="cpu" placeholder="عدد الأنوية" required>
+        <input type="text" id="gpu" placeholder="نوع كرت الشاشة" required>
+        <input type="number" id="storage" placeholder="سعة التخزين (جيجابايت)" required>
+        <label>
+            <input type="checkbox" id="autoStart"> تشغيل تلقائي
+        </label>
+        <button type="submit">إضافة السيرفر</button>
+    </form>
+    <div id="serversList"></div>
+
+    <script src="supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
